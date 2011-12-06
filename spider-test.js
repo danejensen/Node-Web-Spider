@@ -16,7 +16,7 @@ crawler = function(qv){
 }
 
 
-new lazy(fs.createReadStream('/home/rhett/harvest-email/designblogs.txt'))
+new lazy(fs.createReadStream('./designblogs.txt'))
     .lines
     .forEach(function(line){
         var uri = url.parse(line.toString());
